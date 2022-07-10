@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.home-page {
+  background-color: black;
+  opacity: 0.7;
+  position: fixed;
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: aqua;
+  border-bottom: 2px aqua solid;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-auto-columns: 10px;
+  gap: 1rem;
+  background-color: var(--background);
+}
+.card-img img {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-top: 100px;
+  margin-bottom: 180px;
+  margin-left: 60px;
+}
+
+.card:hover {
+  width: 300px;
+  bottom: 440px;
+  background: black;
+}
+
+.card:hover p {
+  opacity: 1;
+  visibility: visible;
+}
+
+.text-card {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  font-weight: bolder;
+  width: 300px;
+  box-sizing: border-box;
+  position: absolute;
+  transition: 0.5s;
+  color: white;
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+h1 {
+  margin: 0px;
+  text-align: center;
+  color: white;
+  background-color: black;
+
+  width: 100%;
+}
+
+.text-card p {
+  background-color: black;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.text-card-moveis p {
+  background-color: black;
+  visibility: hidden;
+  opacity: 0;
+}
+.text-card-music p {
+  background-color: black;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.text-card-moveis {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  font-weight: bolder;
+  width: 300px;
+  box-sizing: border-box;
+  position: absolute;
+  transition: 0.5s;
+  color: white;
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+.text-card-music {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  font-weight: bolder;
+  width: 300px;
+  box-sizing: border-box;
+  position: absolute;
+  transition: 0.5s;
+  color: white;
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+@media (max-width: 1850px) {
+  .main {
+    width: 100%;
+  }
+  .card:nth-of-type(5) {
+    display: none;
+  }
+}
+
+@media (max-width: 1475px) {
+  .main {
+    width: 100%;
+  }
+  .card:nth-of-type(4) {
+    display: none;
+  }
+}
